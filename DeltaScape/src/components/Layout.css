@@ -1,0 +1,17 @@
+.layout-container {
+    background-color: red;
+}
+
+.game-container {
+    background-color: blue;
+    width: calc(100svw - 160px);
+    margin-left: 8em;
+}
+
+.xp-container {
+    background-color: green;
+}
+
+.timer-container {
+    background-color: yellow;
+}
