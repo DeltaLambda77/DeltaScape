@@ -4,11 +4,12 @@ import SideBar from './SideBar'
 import './Layout.css'
 
 const Layout = () => {
-    const [skill, setSkill] = useState('');
-
-    const handleChange = (newSkill) => {
-        setSkill(newSkill);
-    };
+    const [skill, setSkill] = useState({
+            name: "",
+            icon: "",
+            experience: "",
+            level: "",
+        });
 
     return (
         <div className="layout-container">
@@ -16,8 +17,8 @@ const Layout = () => {
             <div className="game-container">
                 <div className="skill-container">
                     <div className="left-skill-container">
-                        <img  alt="skill img alt text goes here"></img>
-                        <h5>Skill Name goes Here</h5>
+                        <img  alt={skill.name + " icon"}></img>
+                        <h5>{skill.name}</h5>
                     </div>
 
                     <div className="right-skill-container">
@@ -38,11 +39,11 @@ const Layout = () => {
                     <div className="skill-stats-container">
                         <div className="skill-level-container">
                             <p>Skill Level</p>
-                            <p>1 / 99 (Pass in skill lvl heree)</p>
+                            <p>{skill.level} / 99 (Pass in skill lvl heree)</p>
                         </div>
                         <div className="skill-xp-container">
-                        <p>{skill} XP</p>
-                            <p>1 / 99 (Pass in skill XP heree)</p>
+                        <p>{skill.name} XP</p>
+                            <p>{skill.experience} / 99 (Pass in skill XP heree)</p>
                         </div>
                         <div className="skill-equipment-container">
 
@@ -58,10 +59,6 @@ const Layout = () => {
             </div>
         </div>
     )
-}
-
-const currentSkill = ({skill}) => {
-    
 }
 
 export default Layout

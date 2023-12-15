@@ -1,10 +1,19 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 
-const Fishing = () => {
 
+const Fishing = () => {
     const [skill, setSkill] = useOutletContext();
-    setSkill("Fishing");
+
+    useEffect(() => {
+        setSkill(prevSkill => ({
+            ...prevSkill,
+            name: "Fishing",
+            icon: "fishing_icon",
+            experience: "73",
+            level: "1"
+        }));
+    }, []);
 
     return (
        <div>
