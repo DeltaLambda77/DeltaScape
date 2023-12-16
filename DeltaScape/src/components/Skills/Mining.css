@@ -1,0 +1,13 @@
+.mining-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 25px 25px 50px 25px;
+}
+
+.mining-card-container > div {
+    background-color: black;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+}

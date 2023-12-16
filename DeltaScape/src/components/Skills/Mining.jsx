@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHourglass } from "@fortawesome/free-solid-svg-icons";
+import './Mining.css'
 
 const Mining = () => {
     const [skill, setSkill] = useOutletContext();
@@ -21,7 +22,7 @@ const Mining = () => {
            <div class="coal-card">
                 <div class="mining-card-details-container">
                     <img alt="xp-icon"></img>
-                    <FontAwesomeIcon icon={faHourglass} />
+                    <FontAwesomeIcon icon={faHourglass} color="white" />
                 </div>
                 <img alt="coal-img"></img>
                 <div class="timer-bar">
