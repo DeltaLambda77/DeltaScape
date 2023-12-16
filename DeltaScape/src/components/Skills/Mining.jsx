@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHourglass } from "@fortawesome/free-solid-svg-icons";
+import CoalOre from "./../../assets/Coal_Ore.png" 
 import './Mining.css'
 
 const Mining = () => {
@@ -24,7 +25,7 @@ const Mining = () => {
                     <img alt="xp-icon"></img>
                     <FontAwesomeIcon icon={faHourglass} color="white" />
                 </div>
-                <img alt="coal-img"></img>
+                <img src={CoalOre} alt="coal-img"></img>
                 <div class="timer-bar">
 
                 </div>
@@ -34,17 +35,26 @@ const Mining = () => {
                     <img alt="xp-icon"></img>
                     <FontAwesomeIcon icon={faHourglass} />
                 </div>
+                <div class="timer-bar">
+
+                </div>
            </div>
            <div class="tin-card">
                 <div class="mining-card-details-container">
                     <img alt="xp-icon"></img>
                     <FontAwesomeIcon icon={faHourglass} />
-                </div>  
+                </div>
+                <div class="timer-bar">
+
+                </div> 
            </div>
            <div class="iron-card">
                 <div class="mining-card-details-container">
                     <img alt="xp-icon"></img>
                     <FontAwesomeIcon icon={faHourglass} />
+                </div>
+                <div class="timer-bar">
+
                 </div>
            </div>
            <div class="silver-card">
@@ -52,11 +62,17 @@ const Mining = () => {
                     <img alt="xp-icon"></img>
                     <FontAwesomeIcon icon={faHourglass} />
                 </div>
+                <div class="timer-bar">
+
+                </div>
            </div>
            <div class="gold-card">
                 <div class="mining-card-details-container">
                     <img alt="xp-icon"></img>
                     <FontAwesomeIcon icon={faHourglass} />
+                </div>
+                <div class="timer-bar">
+
                 </div>
            </div>
            <div class="mithril-card">
@@ -64,17 +80,26 @@ const Mining = () => {
                     <img alt="xp-icon"></img>
                     <FontAwesomeIcon icon={faHourglass} />
                 </div>
+                <div class="timer-bar">
+
+                </div>
            </div>
            <div class="adamantite-card">
                 <div class="mining-card-details-container">
                     <img alt="xp-icon"></img>
                     <FontAwesomeIcon icon={faHourglass} />
                 </div>
+                <div class="timer-bar">
+
+                </div>
            </div>
            <div class="thorium-card">
                 <div class="mining-card-details-container">
                     <img alt="xp-icon"></img>
                     <FontAwesomeIcon icon={faHourglass} />
+                </div>
+                <div class="timer-bar">
+
                 </div>
            </div>
        </div>

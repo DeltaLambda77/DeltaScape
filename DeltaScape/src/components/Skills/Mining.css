@@ -7,7 +7,16 @@
 }
 
 .mining-card-container > div {
-    background-color: black;
+    background-color: #4a4947;
     margin: 5px 5px 5px 5px;
     border-radius: 5px;
+    align-items: center;
+}
+
+.mining-card-container > div > .timer-bar {
+    background-color: lightskyblue;
+    margin: 0 auto 0 auto;
+    height: 25px;
+    width: 60%;
+    border-radius: 10px;
 }
